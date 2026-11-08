@@ -1,5 +1,7 @@
 # Triune AutoCombat
 
+NOTE: Modified to run on 4 class servers, some bugs may exist.
+
 A combat bot and set of in-game tools for the **[Project Triune](https://nms.bestemu.com/)** EverQuest server, running on [MacroQuest](https://macroquest.org/).
 
 On Project Triune every character is three classes at once. Triune AutoCombat runs all three for you: it casts your spells, fires your AAs and discs, pulls mobs, controls your pets, keeps your boxes together, and sits to med when it is safe. Everything is set up from one in-game window - no macros to write.
@@ -9,11 +11,8 @@ On Project Triune every character is three classes at once. Triune AutoCombat ru
 ## Install
 
 1. Download the latest **RoF2** MacroQuest from [macroquest/macroquest/releases](https://github.com/macroquest/macroquest/releases) and extract it somewhere like `C:\MacroQuest`.
-2. Download Triune from [Triune AutoCombat releases](https://github.com/gennro/TriuneAutocombat/releases/latest):
-   - **`TriuneAutocombat-full.zip`** - first install. Has everything, including the MQ2Nav zone navmeshes.
-   - **`TriuneAutocombat-Update.zip`** - updating. Everything except the navmeshes (they rarely change).
-3. Extract the zip **into the root of your MacroQuest folder**. It merges `lua/`, `config/` and `resources/` into place. Overwrite if asked - your own settings and loadouts are never touched.
-4. Start `MacroQuest.exe`, then log into Project Triune.
+2. Extract the zip **into the root of your MacroQuest folder**. It merges `lua/`, `config/` and `resources/` into place. Overwrite if asked - your own settings and loadouts are never touched.
+3. Start `MacroQuest.exe`, then log into Project Triune.
 
 Triune opens by itself when you log in. If you close it, type `/ac` or `/lua run triune`.
 
@@ -148,7 +147,6 @@ A plugin is one Lua file in `lua/tac/` that returns a table with an `id`, a `nam
 
 ## Links
 
-- [Triune AutoCombat releases](https://github.com/gennro/TriuneAutocombat/releases/latest)
 - [MacroQuest releases (RoF2)](https://github.com/macroquest/macroquest/releases)
 - [Project Triune](https://nms.bestemu.com/)
 - [Release notes](RELEASES.md) - short summary per release
